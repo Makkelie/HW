@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game</title>
+</head>
+<body>
+	<h1>Отгадай всё слово!</h1>
+	<script>
+		//Создаём массив со словами
+		var words = [
+			"загадка",
+			"птица",
+			"фонарь",
+			"скрипт",
+			"редактор",
+			"улыбка",
+			"перевод",
+		];
+		
+		//Выбираем случайное слово из массива
+		var	word = words[Math.floor(Math.random() * words.length)];
+		
+		//Создаём итоговый массив хода игры
+		var	answerArray = [];
+		for	(i = 0; i < word.length; i++) {
+			answerArray[i] = "*";
+		}
+		
+		var remainingLetters = word.length;
+		//Переменная для ограничения количества ходов
+		var numberMoves = 20;
+		
+		//Игровой цикл
+		while (remainingLetters > 0 && numberMoves > 0) {
+			//Показываем состояние игры
+			alert("Текущий результат:  " + answerArray.join(" "));
+			alert("Попыток осталось: " + numberMoves);
+			
+			//Просим угадать букву 
+			var guess = prompt("Угадайте букву или нажмите /Отмена/ для выхода из игры.");
+				if (guess === null) {
+					//Завершаем программу
+					break
+				}
+				else if (guess.length !== 1) {
+					alert("Пожалуйста, введите одну букву."); 
+				}
+				else if (numberMoves === 1) {
+					alert("Увы, закончились попытки.");
+					numberMoves--;
+				}
+				else {
+					//Обновляем состояние игры
+					numberMoves--;
+					for (j = 0; j < word.length; j++) {
+						var guessLower = guess.toLowerCase();						
+						if (word[j] === guessLower) {
+							answerArray[j] = guessLower;
+							remainingLetters--;							
+						}
+					}
+				}
+			//Конец игрового цикла
+		}
+		
+		//Показываем ответ
+		alert(answerArray.join(" "));
+		alert("Было загадано слово: " + word);
+	</script>
+</body>
+</html>
