@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // создаём переменные, переменную с алфавитом
+    var alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя",
+        randomNumber = 0,
+        randomString = "";
+
+    // цикл, который выбирает 6 рандомных индекса и по индексам составляет слово
+    while (randomString.length < 6) {
+        randomNumber = Math.floor(Math.random() * alphabet.length);
+        randomString += alphabet[randomNumber];
+    }
+    console.log(randomString);
+
+</script>
+</body>
+</html>

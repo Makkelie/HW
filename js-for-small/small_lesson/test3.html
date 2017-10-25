@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // создаём объект с двумя участниками
+    var scores = {};
+
+    scores.dmitry = 0;
+    scores.alice = 0;
+
+    // создаём массив с вопросами
+    var questions = [
+        "У кого все деньги мира?",
+        "Ночи светлее в Орске или Тюмени?",
+        "А может мы были в Рязани?",
+        "Требуется шашличник в Каве?",
+        "Питон или Руби?"
+    ];
+
+    // создаём цикл, который считает до 5-ти, в который нужно вводить первую букву имени того, кто правильно ответил
+    for (var ii = 0; ii < 5; ii++) {
+        var result = prompt(questions[Math.floor(Math.random() * questions.length)]);
+        if (result == "d") {
+            scores.dmitry++;
+        } else {
+            scores.alice++;
+        }
+    }
+
+    console.log(scores);
+
+</script>
+
+</body>
+</html>
