@@ -1,0 +1,39 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #808080;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+ul {
+	display: flex;
+	background: #ffffff;
+	padding: 15px;
+	flex-direction: column;
+	width: 180px;
+	margin-top: 15px;
+}
+li {
+	display: flex;
+	padding-left: 12px;
+}
+.content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	max-width: 80%;
+	padding: 15px;
+	background: #ffffff;
+	margin-top: 25px;
+	border-radius: 25px;
+}
+
+.content h2 {
+	padding: 15px;
+}

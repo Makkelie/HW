@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.head	{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #ffffff;
+}
+.logo {
+	font-family: 'Indie Flower', cursive;
+	font-size: 50px;
+}
+.nav_list {
+	display: flex;
+	justify-content: space-around;
+}
+.nav_list a {
+	text-transform: uppercase;
+	color: #696969;
+	text-decoration: none;
+}
+.navigation {
+	min-width: 40%;
+}
+.main {
+	background: #DCDCDC;
+	display: flex;
+	margin-top: 73px;
+}
+.content {
+	max-width: 70%;
+	display: flex;
+	margin: 15px auto;
+	padding: 15px;
+}
