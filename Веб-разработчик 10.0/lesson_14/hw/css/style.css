@@ -1,0 +1,157 @@
+/* colors */
+/* fonts */
+/* basic settings */
+html {
+  font-size: 10px;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+body {
+  font-family: 'ProximaNovaRegular', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*styles*/
+.main {
+  background: url(../img/bg-first.jpg) center center no-repeat;
+  background-size: cover;
+}
+.main .row {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.main .row .main_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.5rem;
+}
+.main .row .main_header .number {
+  font-size: 2.3rem;
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  color: #1a1820;
+  margin-left: 59rem;
+}
+.main .row .main_header .header_button {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'ProximaNovaRegular', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 1.8rem 3rem;
+  background-color: #fab102;
+  border-radius: 8px;
+  margin-left: 3.5rem;
+}
+.main .row .main_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .row .main_section .aside_left h1 {
+  margin-top: 10rem;
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #1a1820;
+  text-transform: uppercase;
+}
+.main .row .main_section .aside_left h2 {
+  margin-top: 5rem;
+  font-family: 'ProximaNovaRegular', sans-serif;
+  font-size: 2.4rem;
+  color: #1a1820;
+  font-weight: 400;
+}
+.main .row .main_section .aside_left .text_green {
+  margin-top: 5rem;
+  display: inline-block;
+  padding: 2rem 3rem;
+  font-family: 'ProximaNovaRegular', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.45;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  background-color: #48bd15;
+}
+.main .row .main_section .aside_left .text_green p span {
+  font-size: 2.4rem;
+}
+.main .row .main_section .aside_left .text_low {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 2.6;
+  color: #1a1820;
+}
+.main .row .main_section .section_form {
+  margin-top: 10rem;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main .row .main_section .section_form .header_form {
+  margin: 5rem 5rem 0;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  color: #1a1820;
+}
+.main .row .main_section .section_form input {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  margin: 2.5rem auto 0;
+}
+.main .row .main_section .section_form .btn {
+  margin: 2.5rem auto 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'ProximaNovaRegular', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #ffffff;
+  padding: 1.8rem 3.4rem;
+  background-color: #fab102;
+  border-radius: 8px;
+}
+.main .row .main_section .section_form .small_text__form {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #1a1820;
+  margin-top: 1.5rem;
+}
